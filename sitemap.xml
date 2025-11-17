@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    <!-- 
+    ============================================================
+    Sitemap para DeméterOne
+    
+    LOC (Location): A URL exata da página.
+    LASTMOD (Last Modified): A data da última alteração.
+    CHANGEFREQ (Change Frequency): Com que frequência a página muda.
+    PRIORITY (Priority): A importância da página (1.0 = Máxima).
+    ============================================================
+    -->
+
+    <!-- 
+    Esta é a sua página principal (index.html).
+    É a página mais importante, por isso tem prioridade 1.0.
+    -->
+    <url>
+        <loc>https://demeterone.com.br/</loc>
+        <lastmod>2025-11-17</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <!-- 
+    NOTA FUTURA:
+    Quando o site completo for lançado, adicionaremos
+    as outras páginas aqui. Por exemplo:
+    
+    <url>
+        <loc>https://demeterone.com.br/solucoes</loc>
+        <lastmod>2025-11-17</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://demeterone.com.br/autenticacao/</loc>
+        <lastmod>2025-11-17</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    -->
+
+</urlset>
