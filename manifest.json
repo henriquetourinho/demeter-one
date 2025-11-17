@@ -2,20 +2,33 @@
   "name": "DeméterOne",
   "short_name": "DeméterOne",
   "description": "Plataforma de agrotecnologia para gestão de precisão de rebanhos (Bovinos, Ovinos e Caprinos).",
+  "lang": "pt-BR",
   "start_url": "/",
+  "scope": "/",
   "display": "standalone",
   "background_color": "#111827",
   "theme_color": "#111827",
   "orientation": "portrait-primary",
+  "categories": [
+    "business",
+    "productivity",
+    "utilities"
+  ],
   "icons": [
     {
-      "src": "https://placehold.co/192x192/059669/FFF/DMTR?text=LOGO",
+      "src": "/icons/icon-180x180.png",
+      "type": "image/png",
+      "sizes": "180x180",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icons/icon-192x192.png",
       "type": "image/png",
       "sizes": "192x192",
       "purpose": "any maskable"
     },
     {
-      "src": "https://placehold.co/512x512/059669/FFF/DMTR?text=LOGO",
+      "src": "/icons/icon-512x512.png",
       "type": "image/png",
       "sizes": "512x512",
       "purpose": "any maskable"
