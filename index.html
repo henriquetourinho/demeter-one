@@ -92,7 +92,35 @@
     
     <!-- 
     ==================================================================
-    FIM DO BLOCO DE SEO
+    INÍCIO DO BLOCO DE PWA (Progressive Web App)
+    ================================================================== 
+    -->
+    
+    <!-- Link para o Manifest (Configurações do App) -->
+    <link rel="manifest" href="/manifest.json">
+    
+    <!-- Cor da Barra de Status do Navegador (Chrome no Android) -->
+    <!-- Deve ser a mesma cor do 'theme_color' e 'background_color' no manifest -->
+    <meta name="theme-color" content="#111827">
+    
+    <!-- --- Tags Específicas da Apple (iOS) --- -->
+    
+    <!-- Diz ao iOS que este site pode ser um "app" -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    
+    <!-- Título do App (quando adicionado à tela principal do iOS) -->
+    <meta name="apple-mobile-web-app-title" content="DeméterOne">
+    
+    <!-- Estilo da Barra de Status (no iOS) - 'black-translucent' faz com que o app ocupe a tela inteira -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    
+    <!-- Ícone para Apple (Obrigatório) - Substitua pelo seu ícone -->
+    <!-- Crie um ícone de 180x180 para isto -->
+    <link rel="apple-touch-icon" href="httpsa://placehold.co/180x180/111827/FFF/DMTR?text=LOGO">
+    
+    <!-- 
+    ==================================================================
+    FIM DO BLOCO DE PWA
     ================================================================== 
     -->
     
@@ -156,7 +184,7 @@
                         <p class="text-sm text-gray-400 mb-4">
                             Gostaria de participar da fase de diagnóstico ou saber mais?
                             <br>
-                            Entre em contato direto com a nossa equipe de implantação.
+                            Entre em contato direto com a nossa equipa de implantação.
                         </p>
                         <a href="mailto:espera@demeterone.com.br" 
                            class="inline-block bg-emerald-600 text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-emerald-500 transition-colors shadow-lg mt-4">
@@ -209,6 +237,28 @@
             </div>
         </footer>
     </div>
+    
+    <!-- 
+    ==================================================================
+    INÍCIO DO SCRIPT DE REGISTO DO PWA
+    ================================================================== 
+    -->
+    <script>
+        // Verifica se o navegador suporta Service Workers
+        if ('serviceWorker' in navigator) {
+            // Regista o nosso ficheiro sw.js quando a página carregar
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js')
+                    .then(registration => {
+                        console.log('Service Worker registado com sucesso:', registration.scope);
+                    })
+                    .catch(error => {
+                        console.log('Falha no registo do Service Worker:', error);
+                    });
+            });
+        }
+    </script>
+    <!-- FIM DO SCRIPT PWA -->
 
 </body>
 </html>
