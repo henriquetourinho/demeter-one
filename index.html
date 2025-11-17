@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeméterOne - Em Breve</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts - Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        /* Efeito de gradiente animado para o fundo */
+        .animated-bg {
+            background: linear-gradient(-45deg, #1f2937, #111827, #030712, #1f2937);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+        }
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+    </style>
+</head>
+<body class="animated-bg text-gray-200 antialiased">
+
+    <div class="flex flex-col min-h-screen">
+        
+        <!-- Header com Logo -->
+        <header class="py-6 px-4 sm:px-6 lg:px-8">
+            <div class="container mx-auto max-w-7xl flex justify-between items-center">
+                <!-- Logo -->
+                <a href="#" class="flex items-center gap-2 font-bold text-xl text-white">
+                    <svg class="h-8 w-8 text-emerald-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M11.25 9.75M12 12.75M12 12.75l-2.25-2.25M12 12.75l2.25 2.25M12 12.75l-2.25 2.25M12 12.75l2.25-2.25M3 9l9-7 9 7v10c0 1.105-.895 2-2 2H5c-1.105 0-2-.895-2-2V9Z" />
+                    </svg>
+                    <span>Deméter<span class="text-emerald-500">One</span></span>
+                </a>
+                
+                <!-- Link de Login (para você/admin) -->
+                <a href="/autenticacao/index.php" class="text-sm text-gray-400 hover:text-emerald-400 transition-colors">
+                    Acesso Restrito
+                </a>
+            </div>
+        </header>
+
+        <!-- Conteúdo Principal -->
+        <main class="flex-1 flex items-center">
+            <div class="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 text-center">
+                
+                <div class="max-w-3xl mx-auto">
+                    <!-- Título Principal -->
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-tight">
+                        A Revolução na Gestão da Sua Fazenda Está Chegando.
+                    </h1>
+                    
+                    <!-- Subtítulo (COM O NEGRITO CORRIGIDO) -->
+                    <p class="mt-6 text-xl text-gray-300">
+                        Estamos a calibrar a plataforma de Pecuária de Precisão que unifica a gestão de <strong class="font-semibold text-white">Bovinos, Ovinos e Caprinos</strong>. Chega de planilhas. Prepare-se para os dados.
+                    </p>
+                    
+                    <!-- Email de Contato (Substituindo o formulário) -->
+                    <div class="mt-12 max-w-lg mx-auto">
+                        <p class="text-lg font-medium text-emerald-400 mb-3">Seja um Pioneiro.</p>
+                        <p class="text-sm text-gray-400 mb-4">
+                            Gostaria de participar da fase de diagnóstico ou saber mais?
+                            <br>
+                            Entre em contato direto com a nossa equipe de implantação.
+                        </p>
+                        
+                        <a href="mailto:espera@demeterone.com.br" 
+                           class="inline-block bg-emerald-600 text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-emerald-500 transition-colors shadow-lg mt-4">
+                            espera@demeterone.com.br
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="py-6 px-4 sm:px-6 lg:px-8">
+            <div class="container mx-auto max-w-7xl text-center text-gray-500 text-sm">
+                <!-- O PHP será interpretado se o servidor estiver configurado para isso, ou pode ser trocado por '2025' -->
+                &copy; <?php echo date('Y'); ?> DeméterOne - Soluções em Agrotecnologia.
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>
+
+
